@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', () => {
+    if (Notification.permission !== 'granted') {
+        Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+                console.log('Permissão concedida para notificações.');
+            }
+        });
+    }
+});
+
 function sendNotification() {
     const image = document.getElementById('imageInput').value;
     const title = document.getElementById('titleInput').value;
