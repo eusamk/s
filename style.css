@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(117, 112, 89);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: rgb(30, 25, 22);
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    border-bottom: 5px solid rgb(22, 5, 5);
+    text-align: center;
+    z-index: 2;
+}
+
+.menu>h1 {
+    padding-top: 20px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.links>a {
+    text-decoration: none;
+    margin: 10px 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.links>a:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.dado {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid rgb(22, 11, 5);
+    border-radius: 40px;
+    text-align: center;
+}
+
+main>h1 {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    margin-bottom: 20px;
+}
+
+#face {
+    margin: auto;
+    width: 200px;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 17, 2);
+    border: 2px solid rgb(46, 14, 2);
+    box-shadow: 3px 3px 1px black;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(46, 17, 2);
+    transform: scale(1.05);
+}
+
+#saldo,
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(114, 71, 28);
+}
+
+input {
+    width: 240px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(46, 14, 2);
+    border-radius: 5px;
+}

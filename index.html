@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Validador de Cartão de Crédito</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara ou Coroa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@800&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
-    <label for="cardNumber">Número do Cartão de Crédito:</label>
-    <input type="text" id="cardNumber" placeholder="Digite o número do cartão">
-    <button onclick="validateCard()">Validar</button>
-    <p id="result"></p>
-  </div>
-  <script src="script.js"></script>
+            <section class="dado">
+                <div id="caraCoroa" class="section">
+                    <button id="depositar" onclick="depositar()">Depositar</button>
+                    <button id="sacar" onclick="sacar()">Sacar</button>
+                    <h1>Cara&CoroaPay</h1>
+                    <div id="saldo">Saldo: $0.00</div>
+                <img id="face" alt="">
+                <h3 id="result"></h3>
+                <input type="number" id="valorOperacao" placeholder="Valor da Operação">
+                <button id="apostarCara" onclick="apostar('cara')">Cara</button>
+                <button id="apostarCoroa" onclick="apostar('coroa')">Coroa</button>
+        </div>
+    </div>
+</section>
+<audio id="somAposta" src="som.mp3"></audio>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
